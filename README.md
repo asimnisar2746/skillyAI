@@ -4,7 +4,7 @@
 
 Skilly helps students and job seekers figure out which career path fits them. Users register, build a rich profile (academic background, work experience, skills, languages, certifications, career interests), and Skilly's AI engine analyzes it to recommend career paths, highlight skill gaps, and suggest courses to close them — all saved as history the user can revisit.
 
-Built as a BS-CS final year thesis project — *Skilly, AI Powered Career Guidance System*, University of Malakand (2021–2025).
+Built as a BS-CS final year thesis project — _Skilly, AI Powered Career Guidance System_, University of Malakand (2021–2025).
 
 ---
 
@@ -21,15 +21,15 @@ Built as a BS-CS final year thesis project — *Skilly, AI Powered Career Guidan
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | [Next.js](https://nextjs.org/) (App Router, TypeScript) |
-| Styling | [Tailwind CSS](https://tailwindcss.com/) |
-| UI Components | [Shadcn UI](https://ui.shadcn.com/) |
-| Database | [PostgreSQL](https://www.postgresql.org/) (via Neon) |
-| ORM | [Prisma](https://www.prisma.io/) |
-| Auth | [NextAuth.js](https://next-auth.js.org/) |
-| AI | OpenAI API / Claude API |
+| Layer         | Technology                                              |
+| ------------- | ------------------------------------------------------- |
+| Framework     | [Next.js](https://nextjs.org/) (App Router, TypeScript) |
+| Styling       | [Tailwind CSS](https://tailwindcss.com/)                |
+| UI Components | [Shadcn UI](https://ui.shadcn.com/)                     |
+| Database      | [PostgreSQL](https://www.postgresql.org/) (via Neon)    |
+| ORM           | [Prisma](https://www.prisma.io/)                        |
+| Auth          | [NextAuth.js](https://next-auth.js.org/)                |
+| AI            | Gemini                                                  |
 
 See [ERD.md](./ERD.md) for the database design (including the post-mockup revision) and [FRD.md](./FRD.md) for the full functional requirements.
 
@@ -39,7 +39,7 @@ See [ERD.md](./ERD.md) for the database design (including the post-mockup revisi
 
 - Node.js 18+
 - A PostgreSQL database (Neon recommended)
-- An OpenAI or Anthropic API key
+- A Gemini API key
 
 ### Installation
 
@@ -55,7 +55,7 @@ npm install
 DATABASE_URL="postgresql://..."
 NEXTAUTH_SECRET="..."
 NEXTAUTH_URL="http://localhost:3000"
-OPENAI_API_KEY="sk-..."
+GEMINI_API_KEY="sk-..."
 ```
 
 ### Database Setup
