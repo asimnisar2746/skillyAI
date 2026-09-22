@@ -34,9 +34,8 @@ export function InsightsStep({
             name="careerInterests.preferredJobRoles"
             control={control}
             rules={{
-              validate: (value) => {
-                value.length > 0 || "Add atleast one job role";
-              },
+              validate: (value) =>
+                value.length > 0 || "Add atleast one job role",
             }}
             render={({ field, fieldState }) => (
               <Field data-invalid={fieldState.invalid}>
