@@ -97,17 +97,35 @@ Highest Degree: ${profile?.highestDegree ?? "Not specified"}
 Field of Study: ${profile?.fieldOfStudy ?? "Not specified"}
 
 WORK EXPERIENCE:
-${workExperiences.map((exp) => `- ${exp.jobTitle} at ${exp.company}: ${exp.rolesAndResponsibilities}`).join("\n") || "None listed"}
+${
+  workExperiences
+    .map(
+      (exp: {
+        jobTitle: string;
+        company: string;
+        rolesAndResponsibilities: string;
+      }) =>
+        `- ${exp.jobTitle} at ${exp.company}: ${exp.rolesAndResponsibilities}`,
+    )
+    .join("\n") || "None listed"
+}
 
 CURRENT SKILLS:
-${userSkills.map((us) => `- ${us.skill.name} (${us.skill.type}, proficiency ${us.proficiency}/5)`).join("\n") || "None listed"}
+${
+  userSkills
+    .map(
+      (us: { skill: { name: string; type: string }; proficiency: number }) =>
+        `- ${us.skill.name} (${us.skill.type}, proficiency ${us.proficiency}/5)`,
+    )
+    .join("\n") || "None listed"
+}
 
 CAREER INTERESTS:
 Preferred Roles: ${careerInterests?.preferredJobRoles?.join(", ") || "Not specified"}
 Preferred Industries: ${careerInterests?.preferredIndustries || "Not specified"}
 Career Goals: ${careerInterests?.careerGoals || "Not specified"}
 
-Suggest 4-6 career paths ranked by fit, with a match percentage, a short
+Suggest 3-5 career paths ranked by fit, with a match percentage, a short
 explanation, and 2-3 relevant tags for each. List 5-8 skills currently in
 demand for their preferred industry. Identify 3-5 skill gaps between their
 current skills and their top career match, each with a suggested course
