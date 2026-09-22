@@ -1,0 +1,78 @@
+export type SkillCategory = "Programming Language" | "Framework" | "Soft Skill";
+
+export type SkillSuggestion = {
+  name: string;
+  type: SkillCategory;
+};
+
+export const SKILL_SUGGESTIONS: SkillSuggestion[] = [
+  // Programming Languages
+  { name: "JavaScript", type: "Programming Language" },
+  { name: "TypeScript", type: "Programming Language" },
+  { name: "Python", type: "Programming Language" },
+  { name: "Java", type: "Programming Language" },
+  { name: "C++", type: "Programming Language" },
+  { name: "C#", type: "Programming Language" },
+  { name: "PHP", type: "Programming Language" },
+  { name: "Go", type: "Programming Language" },
+  { name: "Rust", type: "Programming Language" },
+  { name: "Swift", type: "Programming Language" },
+  { name: "Kotlin", type: "Programming Language" },
+  { name: "Ruby", type: "Programming Language" },
+  { name: "SQL", type: "Programming Language" },
+  { name: "R", type: "Programming Language" },
+  { name: "Dart", type: "Programming Language" },
+  { name: "HTML", type: "Programming Language" },
+  { name: "CSS", type: "Programming Language" },
+
+  // Frameworks / Tools
+  { name: "React", type: "Framework" },
+  { name: "Next.js", type: "Framework" },
+  { name: "Vue.js", type: "Framework" },
+  { name: "Angular", type: "Framework" },
+  { name: "Node.js", type: "Framework" },
+  { name: "Express.js", type: "Framework" },
+  { name: "Django", type: "Framework" },
+  { name: "Flask", type: "Framework" },
+  { name: "Spring Boot", type: "Framework" },
+  { name: "Laravel", type: "Framework" },
+  { name: "Tailwind CSS", type: "Framework" },
+  { name: "Bootstrap", type: "Framework" },
+  { name: "React Native", type: "Framework" },
+  { name: "Flutter", type: "Framework" },
+  { name: ".NET", type: "Framework" },
+  { name: "TensorFlow", type: "Framework" },
+  { name: "PyTorch", type: "Framework" },
+  { name: "Git", type: "Framework" },
+  { name: "Docker", type: "Framework" },
+  { name: "Kubernetes", type: "Framework" },
+  { name: "AWS", type: "Framework" },
+  { name: "Figma", type: "Framework" },
+  { name: "Adobe XD", type: "Framework" },
+  { name: "Photoshop", type: "Framework" },
+  { name: "Excel", type: "Framework" },
+  { name: "Power BI", type: "Framework" },
+  { name: "Tableau", type: "Framework" },
+  { name: "Agile Methodology", type: "Framework" },
+  { name: "Scrum", type: "Framework" },
+
+  // Soft Skills
+  { name: "Public Speaking", type: "Soft Skill" },
+  { name: "Project Management", type: "Soft Skill" },
+  { name: "Communication", type: "Soft Skill" },
+  { name: "Leadership", type: "Soft Skill" },
+  { name: "Teamwork", type: "Soft Skill" },
+  { name: "Problem Solving", type: "Soft Skill" },
+  { name: "Critical Thinking", type: "Soft Skill" },
+  { name: "Time Management", type: "Soft Skill" },
+  { name: "Adaptability", type: "Soft Skill" },
+  { name: "Creativity", type: "Soft Skill" },
+  { name: "Negotiation", type: "Soft Skill" },
+  { name: "Conflict Resolution", type: "Soft Skill" },
+  { name: "Emotional Intelligence", type: "Soft Skill" },
+  { name: "Decision Making", type: "Soft Skill" },
+  { name: "Mentoring", type: "Soft Skill" },
+  { name: "Customer Service", type: "Soft Skill" },
+  { name: "Presentation Skills", type: "Soft Skill" },
+  { name: "Analytical Thinking", type: "Soft Skill" },
+];
