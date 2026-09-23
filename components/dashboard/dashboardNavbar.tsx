@@ -94,9 +94,9 @@ export function DashboardNavbar({
                 </button>
               }
             />
-            <PopoverContent align="end" className="w-40 p-2">
-              <p className="font-medium px-3 mt-2">{session?.user?.name}</p>
-              <p className="text-sm text-muted-foreground px-3">
+            <PopoverContent align="end" className="w-65 p-2">
+              <p className="font-medium pl-3 mt-2">{session?.user?.name}</p>
+              <p className="text-sm text-muted-foreground pl-3 break-all">
                 {session?.user?.email}
               </p>
               <Button
